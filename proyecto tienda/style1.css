@@ -1,0 +1,147 @@
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #6a11cb;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url("imagenes/tienda.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+header {
+    background-color: #ff6347;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el contenido del texto */
+}
+
+section h2 {
+    color: #ff6347;
+    text-align: center; 
+}
+
+section p {
+    text-align: center;
+}
+
+section img {
+    border-radius: 10px;
+    width: 100px; /* Ajusta el tamaño de las imágenes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+img:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+#controladores {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten y envuelvan si es necesario */
+    gap: 20px; /* Espacio entre las figuras */
+}
+
+figure {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+
+button{
+    background:#b93017;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  button:hover{
+    background:#fff;
+    color:#b93017;
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #b93017;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff6347;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
