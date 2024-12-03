@@ -1,0 +1,5 @@
+peliculas\ui\UIPeliculas.class
+peliculas\Main.class
+peliculas\modelo\ICatalogoPeliculas.class
+peliculas\modelo\ImplementacionCatalogoPelicula.class
+peliculas\modelo\Pelicula.class
